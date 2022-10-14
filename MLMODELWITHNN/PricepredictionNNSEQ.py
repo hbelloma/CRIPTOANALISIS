@@ -16,6 +16,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import pandas_datareader as web
 import datetime as dt
+import mplfinance as mpf #for ploting with japanese candles
 
 # FOR ML MODEL
 from sklearn.preprocessing import MinMaxScaler #to scale finantial data between 0 and 1
@@ -28,7 +29,7 @@ against_currency = 'USD'
 start = dt.datetime(2016,1,1)
 end = dt.datetime.now()
 data= web.DataReader(f'{crypto_currency}-{against_currency}','yahoo',start,end)
-#mpf.plot(data, type="candle", volume=True, style="yahoo")
+#mpf.plot(data, type="candle", volume=True, style="yahoo")  # japanese candle plot
 
 # PREPARE DATA
 #print(data.head()) 
