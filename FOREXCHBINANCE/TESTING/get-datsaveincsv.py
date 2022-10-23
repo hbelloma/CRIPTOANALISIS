@@ -1,5 +1,5 @@
 #
-# intall binance library
+# install binance library
 #  pip install python-binance
 #
 #
