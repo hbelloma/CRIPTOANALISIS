@@ -1,12 +1,13 @@
 #
 # pip install websocket_client
+# review https://github.com/binance/binance-spot-api-docs/blob/master/web-socket-streams.md
 #
 
 import websocket
 import json
 import pprint
 
-SOCKET="wws://stream.binance.com:9443/ws/btcusdt@kline_1m"   #Conección a binance para datos en tiempo real BTCUSD 1 min data
+SOCKET="wws://stream.binance.com:9443/ws/btcusdt@kline_1m"   #ConecciÃ³n a binance para datos en tiempo real BTCUSD 1 min data
 
 def on_open(ws):
     print('opened connection')
